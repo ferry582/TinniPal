@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6CAB0842BB67B50001CAD02 /* TinniPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB0832BB67B50001CAD02 /* TinniPalApp.swift */; };
+		E6CAB0882BB67B52001CAD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0872BB67B52001CAD02 /* Assets.xcassets */; };
+		E6CAB08B2BB67B52001CAD02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB08A2BB67B52001CAD02 /* Preview Assets.xcassets */; };
+		E6CAB0972BB688E2001CAD02 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB0962BB688E2001CAD02 /* Sound.swift */; };
+		E6CAB0992BB68923001CAD02 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB0982BB68923001CAD02 /* SoundManager.swift */; };
+		E6CAB09C2BB6892B001CAD02 /* SoundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB09A2BB6892B001CAD02 /* SoundsViewModel.swift */; };
+		E6CAB09D2BB6892B001CAD02 /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB09B2BB6892B001CAD02 /* ConfigViewModel.swift */; };
+		E6CAB0A32BB68935001CAD02 /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB09E2BB68935001CAD02 /* SoundsView.swift */; };
+		E6CAB0A42BB68935001CAD02 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB09F2BB68935001CAD02 /* TimerPickerView.swift */; };
+		E6CAB0A52BB68935001CAD02 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB0A02BB68935001CAD02 /* InfoView.swift */; };
+		E6CAB0A62BB68935001CAD02 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB0A12BB68935001CAD02 /* ConfigView.swift */; };
+		E6CAB0A72BB68935001CAD02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CAB0A22BB68935001CAD02 /* ContentView.swift */; };
+		E6CAB0BA2BB6899E001CAD02 /* Owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0A92BB6899E001CAD02 /* Owl.mp3 */; };
+		E6CAB0BB2BB6899E001CAD02 /* Water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0AA2BB6899E001CAD02 /* Water.mp3 */; };
+		E6CAB0BC2BB6899E001CAD02 /* Zen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0AB2BB6899E001CAD02 /* Zen.mp3 */; };
+		E6CAB0BD2BB6899E001CAD02 /* Squirrel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0AC2BB6899E001CAD02 /* Squirrel.mp3 */; };
+		E6CAB0BE2BB6899E001CAD02 /* Frogs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0AD2BB6899E001CAD02 /* Frogs.mp3 */; };
+		E6CAB0BF2BB6899E001CAD02 /* Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0AE2BB6899E001CAD02 /* Fire.mp3 */; };
+		E6CAB0C02BB6899E001CAD02 /* Moment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0AF2BB6899E001CAD02 /* Moment.mp3 */; };
+		E6CAB0C12BB6899E001CAD02 /* Leaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B02BB6899E001CAD02 /* Leaves.mp3 */; };
+		E6CAB0C22BB6899E001CAD02 /* Birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B12BB6899E001CAD02 /* Birds.mp3 */; };
+		E6CAB0C32BB6899E001CAD02 /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B22BB6899E001CAD02 /* Rain.mp3 */; };
+		E6CAB0C42BB6899E001CAD02 /* Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B32BB6899E001CAD02 /* Waves.mp3 */; };
+		E6CAB0C52BB6899E001CAD02 /* Calm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B42BB6899E001CAD02 /* Calm.mp3 */; };
+		E6CAB0C62BB6899E001CAD02 /* Cricket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B52BB6899E001CAD02 /* Cricket.mp3 */; };
+		E6CAB0C72BB6899E001CAD02 /* Wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B62BB6899E001CAD02 /* Wind.mp3 */; };
+		E6CAB0C82BB6899E001CAD02 /* Jungle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B72BB6899E001CAD02 /* Jungle.mp3 */; };
+		E6CAB0C92BB6899E001CAD02 /* Cicadas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B82BB6899E001CAD02 /* Cicadas.mp3 */; };
+		E6CAB0CA2BB6899E001CAD02 /* Thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CAB0B92BB6899E001CAD02 /* Thunder.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E6CAB0802BB67B50001CAD02 /* TinniPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinniPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CAB0832BB67B50001CAD02 /* TinniPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinniPalApp.swift; sourceTree = "<group>"; };
+		E6CAB0872BB67B52001CAD02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6CAB08A2BB67B52001CAD02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6CAB0962BB688E2001CAD02 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		E6CAB0982BB68923001CAD02 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		E6CAB09A2BB6892B001CAD02 /* SoundsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsViewModel.swift; sourceTree = "<group>"; };
+		E6CAB09B2BB6892B001CAD02 /* ConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
+		E6CAB09E2BB68935001CAD02 /* SoundsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
+		E6CAB09F2BB68935001CAD02 /* TimerPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
+		E6CAB0A02BB68935001CAD02 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		E6CAB0A12BB68935001CAD02 /* ConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		E6CAB0A22BB68935001CAD02 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6CAB0A92BB6899E001CAD02 /* Owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Owl.mp3; sourceTree = "<group>"; };
+		E6CAB0AA2BB6899E001CAD02 /* Water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Water.mp3; sourceTree = "<group>"; };
+		E6CAB0AB2BB6899E001CAD02 /* Zen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zen.mp3; sourceTree = "<group>"; };
+		E6CAB0AC2BB6899E001CAD02 /* Squirrel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Squirrel.mp3; sourceTree = "<group>"; };
+		E6CAB0AD2BB6899E001CAD02 /* Frogs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Frogs.mp3; sourceTree = "<group>"; };
+		E6CAB0AE2BB6899E001CAD02 /* Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire.mp3; sourceTree = "<group>"; };
+		E6CAB0AF2BB6899E001CAD02 /* Moment.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Moment.mp3; sourceTree = "<group>"; };
+		E6CAB0B02BB6899E001CAD02 /* Leaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Leaves.mp3; sourceTree = "<group>"; };
+		E6CAB0B12BB6899E001CAD02 /* Birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Birds.mp3; sourceTree = "<group>"; };
+		E6CAB0B22BB6899E001CAD02 /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain.mp3; sourceTree = "<group>"; };
+		E6CAB0B32BB6899E001CAD02 /* Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waves.mp3; sourceTree = "<group>"; };
+		E6CAB0B42BB6899E001CAD02 /* Calm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Calm.mp3; sourceTree = "<group>"; };
+		E6CAB0B52BB6899E001CAD02 /* Cricket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cricket.mp3; sourceTree = "<group>"; };
+		E6CAB0B62BB6899E001CAD02 /* Wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wind.mp3; sourceTree = "<group>"; };
+		E6CAB0B72BB6899E001CAD02 /* Jungle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jungle.mp3; sourceTree = "<group>"; };
+		E6CAB0B82BB6899E001CAD02 /* Cicadas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cicadas.mp3; sourceTree = "<group>"; };
+		E6CAB0B92BB6899E001CAD02 /* Thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Thunder.mp3; sourceTree = "<group>"; };
+		E6CAB0CB2BB68A92001CAD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6CAB07D2BB67B50001CAD02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6CAB0772BB67B50001CAD02 = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0822BB67B50001CAD02 /* TinniPal */,
+				E6CAB0812BB67B50001CAD02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6CAB0812BB67B50001CAD02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0802BB67B50001CAD02 /* TinniPal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6CAB0822BB67B50001CAD02 /* TinniPal */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0952BB688C2001CAD02 /* App */,
+				E6CAB0942BB688BC001CAD02 /* Models */,
+				E6CAB0932BB688B7001CAD02 /* Utils */,
+				E6CAB0922BB688A9001CAD02 /* ViewModels */,
+				E6CAB0912BB688A2001CAD02 /* Views */,
+				E6CAB0CC2BB96F4F001CAD02 /* Supporting Files */,
+				E6CAB0892BB67B52001CAD02 /* Preview Content */,
+			);
+			path = TinniPal;
+			sourceTree = "<group>";
+		};
+		E6CAB0892BB67B52001CAD02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB08A2BB67B52001CAD02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6CAB0912BB688A2001CAD02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0A12BB68935001CAD02 /* ConfigView.swift */,
+				E6CAB0A22BB68935001CAD02 /* ContentView.swift */,
+				E6CAB0A02BB68935001CAD02 /* InfoView.swift */,
+				E6CAB09E2BB68935001CAD02 /* SoundsView.swift */,
+				E6CAB09F2BB68935001CAD02 /* TimerPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6CAB0922BB688A9001CAD02 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB09B2BB6892B001CAD02 /* ConfigViewModel.swift */,
+				E6CAB09A2BB6892B001CAD02 /* SoundsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E6CAB0932BB688B7001CAD02 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0982BB68923001CAD02 /* SoundManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E6CAB0942BB688BC001CAD02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0962BB688E2001CAD02 /* Sound.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6CAB0952BB688C2001CAD02 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0832BB67B50001CAD02 /* TinniPalApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E6CAB0A82BB6898D001CAD02 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0B12BB6899E001CAD02 /* Birds.mp3 */,
+				E6CAB0B42BB6899E001CAD02 /* Calm.mp3 */,
+				E6CAB0B82BB6899E001CAD02 /* Cicadas.mp3 */,
+				E6CAB0B52BB6899E001CAD02 /* Cricket.mp3 */,
+				E6CAB0AE2BB6899E001CAD02 /* Fire.mp3 */,
+				E6CAB0AD2BB6899E001CAD02 /* Frogs.mp3 */,
+				E6CAB0B72BB6899E001CAD02 /* Jungle.mp3 */,
+				E6CAB0B02BB6899E001CAD02 /* Leaves.mp3 */,
+				E6CAB0AF2BB6899E001CAD02 /* Moment.mp3 */,
+				E6CAB0A92BB6899E001CAD02 /* Owl.mp3 */,
+				E6CAB0B22BB6899E001CAD02 /* Rain.mp3 */,
+				E6CAB0AC2BB6899E001CAD02 /* Squirrel.mp3 */,
+				E6CAB0B92BB6899E001CAD02 /* Thunder.mp3 */,
+				E6CAB0AA2BB6899E001CAD02 /* Water.mp3 */,
+				E6CAB0B32BB6899E001CAD02 /* Waves.mp3 */,
+				E6CAB0B62BB6899E001CAD02 /* Wind.mp3 */,
+				E6CAB0AB2BB6899E001CAD02 /* Zen.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		E6CAB0CC2BB96F4F001CAD02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB0CB2BB68A92001CAD02 /* Info.plist */,
+				E6CAB0A82BB6898D001CAD02 /* Sounds */,
+				E6CAB0872BB67B52001CAD02 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6CAB07F2BB67B50001CAD02 /* TinniPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6CAB08E2BB67B52001CAD02 /* Build configuration list for PBXNativeTarget "TinniPal" */;
+			buildPhases = (
+				E6CAB07C2BB67B50001CAD02 /* Sources */,
+				E6CAB07D2BB67B50001CAD02 /* Frameworks */,
+				E6CAB07E2BB67B50001CAD02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinniPal;
+			productName = TinniPal;
+			productReference = E6CAB0802BB67B50001CAD02 /* TinniPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6CAB0782BB67B50001CAD02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					E6CAB07F2BB67B50001CAD02 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = E6CAB07B2BB67B50001CAD02 /* Build configuration list for PBXProject "TinniPal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6CAB0772BB67B50001CAD02;
+			productRefGroup = E6CAB0812BB67B50001CAD02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6CAB07F2BB67B50001CAD02 /* TinniPal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6CAB07E2BB67B50001CAD02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CAB0CA2BB6899E001CAD02 /* Thunder.mp3 in Resources */,
+				E6CAB0C42BB6899E001CAD02 /* Waves.mp3 in Resources */,
+				E6CAB0C32BB6899E001CAD02 /* Rain.mp3 in Resources */,
+				E6CAB0C12BB6899E001CAD02 /* Leaves.mp3 in Resources */,
+				E6CAB0BA2BB6899E001CAD02 /* Owl.mp3 in Resources */,
+				E6CAB0BD2BB6899E001CAD02 /* Squirrel.mp3 in Resources */,
+				E6CAB08B2BB67B52001CAD02 /* Preview Assets.xcassets in Resources */,
+				E6CAB0BB2BB6899E001CAD02 /* Water.mp3 in Resources */,
+				E6CAB0BF2BB6899E001CAD02 /* Fire.mp3 in Resources */,
+				E6CAB0C72BB6899E001CAD02 /* Wind.mp3 in Resources */,
+				E6CAB0882BB67B52001CAD02 /* Assets.xcassets in Resources */,
+				E6CAB0C22BB6899E001CAD02 /* Birds.mp3 in Resources */,
+				E6CAB0C92BB6899E001CAD02 /* Cicadas.mp3 in Resources */,
+				E6CAB0C82BB6899E001CAD02 /* Jungle.mp3 in Resources */,
+				E6CAB0BE2BB6899E001CAD02 /* Frogs.mp3 in Resources */,
+				E6CAB0BC2BB6899E001CAD02 /* Zen.mp3 in Resources */,
+				E6CAB0C02BB6899E001CAD02 /* Moment.mp3 in Resources */,
+				E6CAB0C52BB6899E001CAD02 /* Calm.mp3 in Resources */,
+				E6CAB0C62BB6899E001CAD02 /* Cricket.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6CAB07C2BB67B50001CAD02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CAB0A52BB68935001CAD02 /* InfoView.swift in Sources */,
+				E6CAB09C2BB6892B001CAD02 /* SoundsViewModel.swift in Sources */,
+				E6CAB09D2BB6892B001CAD02 /* ConfigViewModel.swift in Sources */,
+				E6CAB0A62BB68935001CAD02 /* ConfigView.swift in Sources */,
+				E6CAB0972BB688E2001CAD02 /* Sound.swift in Sources */,
+				E6CAB0842BB67B50001CAD02 /* TinniPalApp.swift in Sources */,
+				E6CAB0A72BB68935001CAD02 /* ContentView.swift in Sources */,
+				E6CAB0A32BB68935001CAD02 /* SoundsView.swift in Sources */,
+				E6CAB0992BB68923001CAD02 /* SoundManager.swift in Sources */,
+				E6CAB0A42BB68935001CAD02 /* TimerPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E6CAB08C2BB67B52001CAD02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6CAB08D2BB67B52001CAD02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6CAB08F2BB67B52001CAD02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinniPal/Preview Content\"";
+				DEVELOPMENT_TEAM = 72Y28H39U9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TinniPal/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TinniPal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.TinniPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6CAB0902BB67B52001CAD02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinniPal/Preview Content\"";
+				DEVELOPMENT_TEAM = 72Y28H39U9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TinniPal/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TinniPal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.TinniPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6CAB07B2BB67B50001CAD02 /* Build configuration list for PBXProject "TinniPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CAB08C2BB67B52001CAD02 /* Debug */,
+				E6CAB08D2BB67B52001CAD02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6CAB08E2BB67B52001CAD02 /* Build configuration list for PBXNativeTarget "TinniPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CAB08F2BB67B52001CAD02 /* Debug */,
+				E6CAB0902BB67B52001CAD02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6CAB0782BB67B50001CAD02 /* Project object */;
+}
