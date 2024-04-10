@@ -5,6 +5,8 @@
 
 **TinniPal** has various natural sounds library, you can create your own personalized soundscape that suit you with choosing and play several sounds at the same time. You can also configure volume for each sound, by these features you can personalized your own preferable soundscape. There are also left-right stereo output feature that you may can adjust, where we know that not every tinnitus sufferers hear tinnitus in both ears. And don’t worry to fall asleep or forget to turn off the playing sounds, because there is a timer feature that you can set for how long you want to hear the sounds.
 
+[![Latest Release](https://img.shields.io/github/v/release/ferry582/TinniPal?color=667DFA)](https://github.com/ferry582/TinniPal/releases)
+
 # Get It Now
 <a href="https://apps.apple.com/us/app/tinnipal/id6483106989?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1712620800" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 
